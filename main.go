@@ -31,6 +31,7 @@ func (a SortGraphDataByCount) Less(i, j int) bool {
 func main() {
     reader := bufio.NewReader(os.Stdin)
 
+    fmt.Println("Enter your text: ")
     input, _ := reader.ReadString('\n')
     input = strings.Replace(input, "\n", "", -1)
 
